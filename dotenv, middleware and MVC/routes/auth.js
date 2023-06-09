@@ -1,11 +1,14 @@
+const {
+  loginController,
+  signupController,
+  getUserController,
+} = require("../controllers/auth");
+const log = require("../midlewares/Logger");
+
 const router = require("express").Router();
 
-router.post("/login", (req, res) => {
-  res.send("this id for login");
-});
-
-router.post("/signup", (req, res) => {
-  res.send("this id for signup");
-});
+router.post("/login", loginController);
+router.post("/signup", signupController);
+router.get("/user/:id", getUserController);
 
 module.exports = router;
