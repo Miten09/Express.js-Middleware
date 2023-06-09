@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 module.exports = () => {
   const mongoUri =
-    "mongodb+srv://Miten:MiHaKrRa88@projects.hpzcfyg.mongodb.net/?retryWrites=true&w=majority";
+    "mongodb+srv://Miten:@projects.hpzcfyg.mongodb.net/?retryWrites=true&w=majority";
 
   mongoose
     .connect(mongoUri, {
